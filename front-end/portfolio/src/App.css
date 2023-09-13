@@ -25,13 +25,14 @@ font-size: 80px;
 
 h2 {
     font-size: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 40px 0px 60px 0px;
 }
 
@@ -144,10 +145,12 @@ header {
 }
 
 .service ul {
+    display: flex;
     border: solid;
     border-radius: 20px;
-    gap: 5px;
-    padding: 7px;
+    gap: 15px;
+    padding: 10px;
+    font-size: 25px;
 }
 
 .motiv {
@@ -201,4 +204,61 @@ header {
 
 .lien ul a {
     color: rgb(195, 198, 201);
+}
+
+
+
+
+@media screen and (max-width: 1100px){
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .intro ul img {
+        width: 30%;
+    }
+
+
+    .projet a img {
+        height: 80%;
+    }
+
+    .comp {
+        gap: 20px;
+    }
+
+    .comm {
+        margin: 0;
+        margin-bottom: 80px;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .contact {
+        margin: 0;
+    }
+
+    .service {
+        flex-direction: column;
+    }
+
+    .service ul {
+        justify-content: center;
+    }
+
+    .contact ul {
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .lien {
+        gap: 20px;
+    }
+
+    @media screen and (max-width: 768px){
+        .projet {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
 }

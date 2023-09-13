@@ -11,6 +11,7 @@ import git from "./img/github.PNG"
 import './App.css';
 
 
+
 function App() {
   return (
    <div className='container'>
@@ -64,15 +65,15 @@ function App() {
           <img src={nina} alt="nina" />
           
         </a>
-        <a href="https://github.com/SliMaTy/Projet-2-Openclassrooms">
+        <a href="https://slimaty.github.io/Projet-7/">
           <img src={livre} alt="livre" />
           
         </a>
-        <a href="https://github.com/SliMaTy/Projet-2-Openclassrooms">
+        <a href="https://github.com/SliMaTy/Projet-3-openclassroom">
           <img src={sophie} alt="sophie" />
           
         </a>
-        <a href="https://github.com/SliMaTy/Projet-2-Openclassrooms">
+        <a href="https://slimaty.github.io/Projet-6/">
           <img src={kasa} alt="kasa" />
           
         </a>
@@ -112,11 +113,11 @@ function App() {
       <h2>Services</h2>
 
       <li className='service' id="service">
-        <ul><FontAwesomeIcon icon={ faCheckToSlot } />Front-end</ul>
-        <ul><FontAwesomeIcon icon={ faCheckToSlot } />Back-end</ul>
-        <ul><FontAwesomeIcon icon={ faCheckToSlot } />Website</ul>
-        <ul><FontAwesomeIcon icon={ faCheckToSlot } />Data-base</ul>
-        <ul><FontAwesomeIcon icon={ faCheckToSlot } />Design</ul>
+        <ul><FontAwesomeIcon icon={ faCheckToSlot } /><p>Front-end</p></ul>
+        <ul><FontAwesomeIcon icon={ faCheckToSlot } /><p>Back-end</p></ul>
+        <ul><FontAwesomeIcon icon={ faCheckToSlot } /><p>Website</p></ul>
+        <ul><FontAwesomeIcon icon={ faCheckToSlot } /><p>Data-base</p></ul>
+        <ul><FontAwesomeIcon icon={ faCheckToSlot } /><p>Design</p></ul>
       </li>
 
       <li className='motiv'>
