@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0c04fc70.css",
-    "main.js": "/portfolio/static/js/main.8781b3fe.js",
-    "static/media/nina.PNG": "/portfolio/static/media/nina.02875c39fe4c63a32eee.PNG",
-    "static/media/leo.PNG": "/portfolio/static/media/leo.431d33fc5b5d6ebd42dd.PNG",
-    "static/media/booki.PNG": "/portfolio/static/media/booki.dcffe50dd3576e54ef57.PNG",
-    "static/media/livre.PNG": "/portfolio/static/media/livre.d007a8d038543fd03e2e.PNG",
-    "static/media/kasa.PNG": "/portfolio/static/media/kasa.ab430604dd7b930297c2.PNG",
-    "static/media/sophie.PNG": "/portfolio/static/media/sophie.cfad0b2ecb264826cbb5.PNG",
-    "static/media/github.PNG": "/portfolio/static/media/github.dee45dc3073e4fbdde3b.PNG",
-    "index.html": "/portfolio/index.html",
-    "main.0c04fc70.css.map": "/portfolio/static/css/main.0c04fc70.css.map",
-    "main.8781b3fe.js.map": "/portfolio/static/js/main.8781b3fe.js.map"
+    "main.css": "/Projet-8/static/css/main.0c04fc70.css",
+    "main.js": "/Projet-8/static/js/main.f09a39e5.js",
+    "static/media/nina.PNG": "/Projet-8/static/media/nina.02875c39fe4c63a32eee.PNG",
+    "static/media/leo.PNG": "/Projet-8/static/media/leo.431d33fc5b5d6ebd42dd.PNG",
+    "static/media/booki.PNG": "/Projet-8/static/media/booki.dcffe50dd3576e54ef57.PNG",
+    "static/media/livre.PNG": "/Projet-8/static/media/livre.d007a8d038543fd03e2e.PNG",
+    "static/media/kasa.PNG": "/Projet-8/static/media/kasa.ab430604dd7b930297c2.PNG",
+    "static/media/sophie.PNG": "/Projet-8/static/media/sophie.cfad0b2ecb264826cbb5.PNG",
+    "static/media/github.PNG": "/Projet-8/static/media/github.dee45dc3073e4fbdde3b.PNG",
+    "index.html": "/Projet-8/index.html",
+    "main.0c04fc70.css.map": "/Projet-8/static/css/main.0c04fc70.css.map",
+    "main.f09a39e5.js.map": "/Projet-8/static/js/main.f09a39e5.js.map"
   },
   "entrypoints": [
     "static/css/main.0c04fc70.css",
-    "static/js/main.8781b3fe.js"
+    "static/js/main.f09a39e5.js"
   ]
 }
