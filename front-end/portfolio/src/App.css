@@ -14,6 +14,11 @@ body {
     background-size: cover;
 }
 
+a {
+    text-decoration: none;
+    color: grey;
+}
+
 h1 {
 font-size: 80px;
 }
@@ -23,9 +28,6 @@ h2 {
     margin-bottom: 50px;
 }
 
-a { 
-    
-}
 
 header {
     display: flex;
@@ -76,13 +78,15 @@ header {
 }
 
 .projet a {
-    background-color: lightgrey;
     padding: 0px 0px 0px 0;
     max-width: 100%;
+    height: 325px;
 }
 
 .projet a img {
     width: 100%;
+    border-radius: 20px;
+    height: 100%;
 }
 
 .xp {
@@ -101,13 +105,13 @@ header {
 
 .comm {
     margin: 0 400px 0 400px;
-    margin-bottom: 60px;
-    border: solid rgb(243, 242, 242);
+    margin-bottom: 100px;
+    border: solid rgb(122, 115, 115);
     padding: 30px 200px 30px 200px;
     border-radius: 40px;
-    background-image: url("https://image.freepik.com/vecteurs-libre/fond-eblouissement-bokeh-violet-flou_23-2148486095.jpg");
+    background-image: url("https://image.freepik.com/vecteurs-libre/arriere-plan-flou-colore_1035-3289.jpg");
     background-size: cover;
-    box-shadow: 10px 5px 5px rgb(134, 99, 134);
+    box-shadow: 10px 5px 5px rgb(119, 83, 126);
 }
 
 .comm div {
@@ -122,6 +126,7 @@ header {
 
 .comm p {
     font-size: 20px;
+    font-style: oblique;
 }
 
 .comm ul img {
@@ -146,37 +151,54 @@ header {
 }
 
 .motiv {
-    margin-bottom: 60px;
+    margin-bottom: 130px;
     font-size: 20px;
+    font-style: oblique;
 }
 
 .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
     padding: 30px 0;
-    border: solid rgb(255, 255, 255);
     border-radius: 20px;
     margin: 0 250px 60px 250px;
-    background-image: url("https://image.freepik.com/vecteurs-libre/arriere-plan-flou-colore_1035-3289.jpg");
-    background-size: cover;
 }
 
-.contact div {
+.contact p {
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.contact ul {
     display: flex;
-    margin-bottom: 20px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 400px;
+    font-size: 20px;
+    color: rgb(195, 198, 201);
 }
 
-.contact ul img {
-    border-radius: 20px;
-    width: 15%;
-    border: solid rgb(240, 235, 235);
-}
-
-.available {
+.mail {
     display: flex;
-    gap: 5px;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
 }
 
-.point {
-    color: lightgreen;
+.mail ul {
+    font-size: 25px;
+}
+
+.lien {
+    display: flex;
+    gap: 70px;
+}
+
+.lien ul{
+    font-size: 60px;
+}
+
+.lien ul a {
+    color: rgb(195, 198, 201);
 }

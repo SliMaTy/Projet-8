@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faHtml5, faCss3, faJava, faNodeJs } from '@fortawesome/free-brands-svg-icons'
-import {faCheckToSlot, faCircle} from '@fortawesome/free-solid-svg-icons'
+import {faCheckToSlot, faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import leo from "./img/leo.PNG";
 import booki from "./img/booki.PNG"
 import livre from "./img/livre.PNG"
 import nina from "./img/nina.PNG"
 import sophie from "./img/sophie.PNG"
 import kasa from "./img/kasa.PNG"
+import git from "./img/github.PNG"
 import './App.css';
 
 
@@ -15,14 +16,29 @@ function App() {
    <div className='container'>
       <header>
         <li className='social'>
-          <ul><FontAwesomeIcon icon={ faGithub } /></ul>
-          <ul><FontAwesomeIcon icon={ faLinkedin } /></ul>
+          <a href='https://github.com/SliMaTy'>
+            <ul><FontAwesomeIcon icon={ faGithub } /></ul>
+          </a>
+          <a href='https://www.linkedin.com/in/l%C3%A9o-jardin%C3%A9-1375b6256/'>
+            <ul><FontAwesomeIcon icon={ faLinkedin } /></ul>
+          </a>
         </li>
         <li className='nav'>
-          <ul>Works</ul>
-          <ul>Experiences</ul>
-          <ul>Services</ul>
-          <ul>leo.jardine30@gmail.com</ul>
+          <a href='#works'>
+            <ul>Works</ul>
+          </a>
+
+          <a href='#experience'>
+            <ul>Experiences</ul>
+          </a>
+
+          <a href='#service'>
+            <ul>Services</ul>
+          </a>
+
+          <a href='#contact'>
+            <ul>Contact</ul>
+          </a>
         </li>
       </header>
 
@@ -39,34 +55,34 @@ function App() {
         <ul>Creating stunning designs that make a real impact</ul>
       </li>
 
-      <li className='projet'>
-        <a href="https://github.com/SliMaTy/Projet-2-Openclassrooms">
+      <li className='projet' id="works">
+        <a href="https://slimaty.github.io/Projet-2-Openclassrooms/">
           <img src={booki} alt="booki" />
-          <ul>Projet 1</ul>
+          
         </a>
-        <a href="https://github.com/SliMaTy/Projet-2-Openclassrooms">
+        <a href="https://slimaty.github.io/Projet-5-nouveauSite/">
           <img src={nina} alt="nina" />
-          <ul>Projet 2</ul>
+          
         </a>
         <a href="https://github.com/SliMaTy/Projet-2-Openclassrooms">
           <img src={livre} alt="livre" />
-          <ul>Projet 3</ul>
+          
         </a>
         <a href="https://github.com/SliMaTy/Projet-2-Openclassrooms">
           <img src={sophie} alt="sophie" />
-          <ul>Projet 4</ul>
+          
         </a>
         <a href="https://github.com/SliMaTy/Projet-2-Openclassrooms">
           <img src={kasa} alt="kasa" />
-          <ul>Projet 5</ul>
+          
         </a>
-        <a href="https://github.com/SliMaTy/Projet-2-Openclassrooms">
-          <img src={booki} alt="booki" />
-          <ul>Projet 6</ul>
+        <a href="https://github.com/SliMaTy">
+          <img src={git} alt="github" />
+          
         </a>
       </li>
 
-      <h2>9 months XP</h2>
+      <h2 id="experience">9 months XP</h2>
 
       <li className='xp'>
         <ul>HTML / CSS / JAVASCRIPT / EXPRESS</ul>
@@ -86,16 +102,16 @@ function App() {
           <ul>Web developper</ul>
         </div>
         <p>
-          As a dedicated web developer, I have the privilege of bringing ideas to life 
+          "As a dedicated web developer, I have the privilege of bringing ideas to life 
           through lines of code. 
           My goal is to craft engaging and user-friendly online experiences 
-          that push the boundaries of technology
+          that push the boundaries of technology"
           </p>
       </li>
 
       <h2>Services</h2>
 
-      <li className='service'>
+      <li className='service' id="service">
         <ul><FontAwesomeIcon icon={ faCheckToSlot } />Front-end</ul>
         <ul><FontAwesomeIcon icon={ faCheckToSlot } />Back-end</ul>
         <ul><FontAwesomeIcon icon={ faCheckToSlot } />Website</ul>
@@ -110,15 +126,18 @@ function App() {
 
       <h2>Contact</h2>
 
-      <li className='contact'>
-        <div>
-          <ul><img src={leo} alt="leo" /></ul>
-          <ul className='available'>
-            <ul className='point'><FontAwesomeIcon icon={ faCircle } /></ul>
-            <ul>Available for work</ul>
-          </ul>
-        </div>
-        <ul>Send me hello or say something on social networks</ul>
+      <li className='contact' id="contact">
+        <ul>
+          <div className='mail'>
+            <FontAwesomeIcon icon={ faEnvelope } />
+            <ul>leo.jardine30@gmail.com</ul>
+          </div>
+          <div className='lien'>
+            <ul><a href='https://github.com/SliMaTy'><FontAwesomeIcon icon={ faGithub } /></a></ul>
+            <ul><a href='https://www.linkedin.com/in/l%C3%A9o-jardin%C3%A9-1375b6256/'><FontAwesomeIcon icon={ faLinkedin } /></a></ul>
+          </div>
+        </ul>
+        <p>Send me hello or say something on social networks</p>
       </li>
 
 
