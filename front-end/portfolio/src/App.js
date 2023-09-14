@@ -8,6 +8,7 @@ import nina from "./img/nina.PNG"
 import sophie from "./img/sophie.PNG"
 import kasa from "./img/kasa.PNG"
 import git from "./img/github.PNG"
+import comp from "./img/comp.PNG"
 import './App.css';
 
 
@@ -119,6 +120,11 @@ function App() {
         <ul><FontAwesomeIcon icon={ faCheckToSlot } /><p>Data-base</p></ul>
         <ul><FontAwesomeIcon icon={ faCheckToSlot } /><p>Design</p></ul>
       </li>
+
+      <a className="imgComp" href='https://miro.com/app/board/uXjVMra60aY=/?share_link_id=424046816160'>
+        <img src={comp} alt="competences" />
+        <p>competences</p>
+      </a>
 
       <li className='motiv'>
         <ul>Product Website</ul>
