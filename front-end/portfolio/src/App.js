@@ -1,14 +1,22 @@
+import React from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faHtml5, faCss3, faJava, faNodeJs } from '@fortawesome/free-brands-svg-icons'
-import {faCheckToSlot, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin, faHtml5, faCss3, faJava, faNodeJs, faFigma } from '@fortawesome/free-brands-svg-icons'
+import {faCheckToSlot, faEnvelope, faGear, faDatabase} from '@fortawesome/free-solid-svg-icons'
+
 import leo from "./img/leo.PNG";
-import booki from "./img/booki.PNG"
-import livre from "./img/livre.PNG"
-import nina from "./img/nina.PNG"
-import sophie from "./img/sophie.PNG"
-import kasa from "./img/kasa.PNG"
+
+
+
+
 import git from "./img/github.PNG"
 import comp from "./img/comp.PNG"
+
+import ModalBooki from "./Modal/ModalBooki.js"
+import ModalKasa from "./Modal/ModalKasa"
+import ModalLivre from "./Modal/ModalLivre"
+import ModalSophie from "./Modal/ModalSophie"
+import ModalNina from "./Modal/ModalNina"
 import './App.css';
 
 
@@ -58,26 +66,22 @@ function App() {
       </li>
 
       <li className='projet' id="works">
-        <a href="https://slimaty.github.io/Projet-2-Openclassrooms/">
-          <img src={booki} alt="booki" />
+        <div>
+          <ModalBooki />
+        </div>
+        <div>
+          <ModalKasa />
+        </div>
+        <div>
+          <ModalLivre />
+        </div>
+        <div>
+          <ModalSophie />
+        </div>
+        <div>
+          <ModalNina />
+        </div>
           
-        </a>
-        <a href="https://slimaty.github.io/Projet-5-nouveauSite/">
-          <img src={nina} alt="nina" />
-          
-        </a>
-        <a href="https://slimaty.github.io/Projet-7/">
-          <img src={livre} alt="livre" />
-          
-        </a>
-        <a href="https://github.com/SliMaTy/Projet-3-openclassroom">
-          <img src={sophie} alt="sophie" />
-          
-        </a>
-        <a href="https://slimaty.github.io/Projet-6/">
-          <img src={kasa} alt="kasa" />
-          
-        </a>
         <a href="https://github.com/SliMaTy">
           <img src={git} alt="github" />
           
@@ -114,16 +118,67 @@ function App() {
       <h2>Services</h2>
 
       <li className='service' id="service">
-        <ul><FontAwesomeIcon icon={ faCheckToSlot } /><p>Front-end</p></ul>
-        <ul><FontAwesomeIcon icon={ faCheckToSlot } /><p>Back-end</p></ul>
-        <ul><FontAwesomeIcon icon={ faCheckToSlot } /><p>Website</p></ul>
-        <ul><FontAwesomeIcon icon={ faCheckToSlot } /><p>Data-base</p></ul>
-        <ul><FontAwesomeIcon icon={ faCheckToSlot } /><p>Design</p></ul>
+        <ul>
+          <div className='serviceTitle'>
+            <FontAwesomeIcon icon={ faCheckToSlot } />
+            <p>Front-end</p>
+          </div>
+          <div className='serviceDesc'>
+            <p>HTML5</p>
+            <p>CSS</p>
+            <p>SCSS</p>
+            <p>JAVASCRIPT</p>
+            <p>REACT</p>
+          </div>
+        </ul>
+        <ul>
+          <div className='serviceTitle'>
+            <FontAwesomeIcon icon={ faCheckToSlot } />
+            <p>Back-end</p>
+          </div>
+          <div className='serviceDesc'>
+            <p>NODE JS</p>
+            <p>EXPRESS</p>
+            <p className='serviceIcon'><FontAwesomeIcon icon={ faNodeJs } /></p>
+          </div>
+        </ul>
+        <ul>
+          <div className='serviceTitle'>
+            <FontAwesomeIcon icon={ faCheckToSlot } />
+            <p>Website</p>
+          </div>
+          <div className='serviceDesc'>
+            <p>SITE HOSTING</p>
+            <p>SITE OPTIMIZATION</p>
+            <p className='serviceIcon'><FontAwesomeIcon icon={ faGear } /></p>
+          </div>
+        </ul>
+        <ul>
+          <div className='serviceTitle'>
+            <FontAwesomeIcon icon={ faCheckToSlot } />
+            <p>Data-base</p>
+          </div>
+          <div className='serviceDesc'>
+            <p>MONGO DB</p>
+            <p className='serviceIcon'><FontAwesomeIcon icon={ faDatabase } /></p>
+          </div>
+        </ul>
+        <ul>
+          <div className='serviceTitle'>
+            <FontAwesomeIcon icon={ faCheckToSlot } />
+            <p>Design</p>
+          </div>
+          <div className='serviceDesc'>
+            <p>FIGMA</p>
+            <p className='serviceIcon'><FontAwesomeIcon icon={ faFigma } /></p>
+          </div>
+        </ul>
       </li>
+
+      <h2>Competences</h2>
 
       <a className="imgComp" href='https://miro.com/app/board/uXjVMra60aY=/?share_link_id=424046816160'>
         <img src={comp} alt="competences" />
-        <p>competences</p>
       </a>
 
       <li className='motiv'>
@@ -146,7 +201,6 @@ function App() {
         </ul>
         <p>Send me hello or say something on social networks</p>
       </li>
-
 
     </div>  
 
